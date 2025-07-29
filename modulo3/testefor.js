@@ -21,3 +21,15 @@ function search() {
     }
 }
 
+//feito com for-of
+
+// function search() {
+//     for (const contact of contacts) {
+//         if (input.value.toLocaleLowerCase() === contact.name.toLocaleLowerCase()) {
+//             p.innerHTML = `Contato Encontrado: Nome: ${contact.name}, Tel: ${contact.number}`
+//             break
+//         } else {
+//             p.innerHTML = "Contato não encontrado!"
+//         }
+//     }
+// }
