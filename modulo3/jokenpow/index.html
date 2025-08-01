@@ -14,14 +14,14 @@
         <h1>JokenPô</h1>
 
         <section class="buttons">
-            <button id="rock"><img src="./assets/rock.gif"></button>
-            <button id="paper"><img src="./assets/paper.gif"></button>
-            <button id="scissors"><img src="./assets/scissors.gif"></button>
+            <button id="rock" onclick="playHuman('rock')"><img src="./assets/rock.gif"></button>
+            <button id="paper" onclick="playHuman('paper')"><img src="./assets/paper.gif"></button>
+            <button id="scissors" onclick="playHuman('scissors')"><img src="./assets/scissors.gif"></button>
         </section>
 
-        <p class="result"></p>
-        <p class="your-score">Pontuação: <span>0</span></p>
-        <p class="machine-score">Sua Pontuação da Alexa: <span>0</span></p>
+        <p class="result">Nova Partida!</p>
+        <p class="your-score">Sua Pontuação: <span id="my-score">0</span></p>
+        <p class="machine-score">Pontuação da Alexa: <span id="alexa-score">0</span></p>
 
     </main>
 </body>
