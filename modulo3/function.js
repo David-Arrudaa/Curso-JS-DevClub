@@ -27,18 +27,13 @@
 const cart = [10, 244, 99, 2, 20, 33, 250]
 
 let total = 0
-function calculateFinal() {
-    for (let i = 0; i < cart.length; i++) {
-        total += cart[i]
-    }
-    return total
-}
-total = calculateFinal()
+cart.forEach(element => {
+    total += element
+});
 
 let finalValue = 0
 function calculateDiscount(price, discount) {
     return (price * discount) / 100
-
 }
 
 cart.forEach(value => {
