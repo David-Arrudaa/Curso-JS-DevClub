@@ -11,20 +11,26 @@ const companies = [
     { name: "Apple", marketValue: 845, CEO: "Tim Cook", foundedOn: 1976 },
 ]
 
-// const add10Percent = (company) => {
-//     company.marketValue += (company.marketValue / 10)
-//     return company
-// }
-// const filterCompanies = (company => company.foundedOn < 1990)
+const add10Percent = (company) => {
+    company.marketValue += (company.marketValue / 10)
+    return company
+}
+const filterCompanies = (company => company.foundedOn < 1990)
 const calculateTotalMarketValue = (acc, company) => acc + company.marketValue
 
-// const marketValueOldCompanies = companies.map(add10Percent)
-//     .filter(filterCompanies)
-//     .reduce(calculateTotalMarketValue, 0)
+const marketValueOldCompanies = companies.map(add10Percent)
+    .filter(filterCompanies)
+    .reduce(calculateTotalMarketValue, 0)
 
-// console.log(marketValueOldCompanies);
+console.log("Empresas abaixo de 1990:");
+console.log(marketValueOldCompanies);
 
 //-------------------------------------------------------------------------------
+// Remover 10% de valor de mercado a todas as empresas - MAP
+// Filtrar somente companhias fundadas acimao de 1990 - FILTER
+// Somar o valor de mercado das restantes - REDUCE
+console.log();
+
 
 const remove10Percent = (company) => {
     company.marketValue -= (company.marketValue / 10)
@@ -36,6 +42,7 @@ const newMarketValueOldCompanies = companies.map(remove10Percent)
     .filter(newFilterCompanies)
     .reduce(calculateTotalMarketValue, 0)
 
+console.log("Empresas acima de 1990");
 console.log(newMarketValueOldCompanies);
 
 
