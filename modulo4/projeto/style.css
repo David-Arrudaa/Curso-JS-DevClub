@@ -33,7 +33,6 @@ button:hover {
     opacity: 0.8;
 }
 
-
 ul {
     list-style: none;
     display: grid;
@@ -63,6 +62,6 @@ p {
 .item-price {
     font-weight: bold;
     color: #79cb15;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     
 }
